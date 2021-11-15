@@ -20,6 +20,7 @@
     <Folder Include="wwwroot\css\" />
     <Folder Include="wwwroot\js\" />
     <Folder Include="wwwroot\pdf\" />
+    <Folder Include="Views\Doctor\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Controllers\" />
@@ -27,5 +28,6 @@
     <None Remove="Views\" />
     <None Remove="Views\Shared\" />
     <None Remove="Views\Home\" />
+    <None Remove="Views\Doctor\" />
   </ItemGroup>
 </Project>

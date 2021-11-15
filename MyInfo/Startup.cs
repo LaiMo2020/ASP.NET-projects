@@ -68,8 +68,15 @@ namespace MyInfo
                 endpoints.MapControllerRoute(
                     "Index",
                     "{action=Index}",
-                    defaults: new { controller = "Home", action = "Index" });
+                    defaults: new { controller = "Home", action = "Index" }
+                );
+                endpoints.MapControllerRoute(
+                     "FeverCheck",
+                     "{action=FeverCheck}",
+                    defaults: new { controller = "Doctor", action = "FeverCheck" }
+                );
             });
+
 
         
         }
