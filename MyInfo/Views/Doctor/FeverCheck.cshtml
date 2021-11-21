@@ -1,7 +1,22 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿
+
 @{
     ViewData["Title"] = "FeverCheck";
 }
-<h1>Check</h1>
+<h1>Doctor Check</h1>
+<p>Please, enter your temperature to check it</p>
+ (ViewBag.message == null)
+
+ <form method="post" asp-controller="Doctor" asp-action="FeverCheck">
+        <label>Check your temperature state</label>
+        <input type="number" name="temp" placeholder="Enter your temperature" />
+        <input type="submit" />
+        @*<button>
+                OnClick="Celsius"
+            </button>*@
+    </form>
+
+ 
+
+<p> @ViewBag.message</p>
+

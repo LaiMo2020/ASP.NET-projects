@@ -76,9 +76,6 @@ namespace MyInfo
                     defaults: new { controller = "Doctor", action = "FeverCheck" }
                 );
             });
-
-
-        
         }
     }
 }
